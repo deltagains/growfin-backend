@@ -23,7 +23,7 @@ def index():
     db.execute('INSERT INTO visits (count) VALUES (1)')
     db.commit()
     count = db.execute('SELECT COUNT(*) FROM visits').fetchone()[0]
-    return render_template_string('<h1>Visitsss: {{ count }}</h1>', count=count)
+    return render_template_string('<h1>sVidfitsss: {{ count }}</h1>', count=count)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
